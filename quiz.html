@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="">
+    </head>
+    <body>
+     <p>Quiz for javascript</p>
+     <p>Hva heter kongen av Norge?</p>
+     <h1 id="feil1" onclick="feil1()">Nils Pettersen</h1>
+     <h1 id="riktig" onclick="riktig()">Kong Harald</h1>
+     <h1 id="feil" onclick="feil()">Prinsen av Danmark</h1>
+      
+     
+     <script>
+         function feil1() {
+            document.getElementById('feil1').innerHTML = 'Dette var feil';
+
+        }
+        function feil() {
+            document.getElementById('feil').innerHTML = 'Dette var feil';
+
+        }
+        function riktig() {
+            document.getElementById('riktig').innerHTML = 'Dette var riktig';
+        }
+    </script>
+    </body>
+</html>
+
