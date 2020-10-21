@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Live Share</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="">
+</head>
+
+<body>
+<script>
+    function ourFunction1() {
+        document.body.style.backgroundColor = 'blue';
+        document.getElementById('1').innerHTML = '';
+    }
+    function ourFunction2() {
+        document.body.style.backgroundImage = "url('')"
+        document.getElementById('2').innerHTML = '';
+    }
+    function ourFunction3() { 
+        document.getElementById('info').innerHTML = 'Hello';
+    }
+    function ourFunction4() {
+        document.getElementById('4').outerHTML = '';
+        <style>
+             
+        </style>
+    }
+    function ourFunction5() {
+        document.getElementById('5').innerHTML = '';
+    }
+    function ourFunction6() {
+        document.getElementById('6').innerHTML = '';
+    }
+    function ourFunction7() {
+        document.getElementById('7').innerHTML = '';
+    }
+    function ourFunction8() {
+        document.getElementById('8').innerHTML = '';
+    }
+    function ourFunction9() {
+        document.getElementById('info').innerHTML += '1992123123';
+    }
+    function tell1() {
+        document.getElementById('2').innerHTML += '1';
+    }
+    
+</script>
+    <style>
+        .grid-container {
+        display: grid;
+        grid-template-columns: 300px 300px 300px;
+        grid-template-rows: 300px 300px 300px;
+        padding: 10px;
+        width: 900px;
+        background-color:crimson;
+        border: solid green;
+        border-radius: 12px;
+    
+        }
+        .grid-item {
+        background-color: blueviolet;
+        border: 1px solid rgba(0, 0, 0, 0.8);
+        padding: 20px;
+        font-size: 30px;
+        text-align: center;
+        
+        }
+        #info {
+            clear: right;
+        }
+        body {
+            background-image: url('https://www.bestprintingonline.com/help_resources/Image/Ducky_Head_Web_Hi-Res.jpg')
+        }
+        div
+    </style>
+    
+    <div class="grid-container">
+        <div style="background-color: blue;" id="1" class="grid-item"><button style = "color:red;background-color:blue" onclick="ourFunction1()">1</button></div>
+        <div id="2" class="grid-item" style="background-image: url('https://www.bestprintingonline.com/help_resources/Image/Ducky_Head_Web_Hi-Res.jpg')"><button onclick="ourFunction2()">2</button></div>
+        <div id="3" class="grid-item"><button onclick="ourFunction3()">3</button></div>  
+        <div id="4" class="grid-item"><button onclick="ourFunction4()">4</button></div>
+        <div id="5" class="grid-item"><button onclick="ourFunction5()">5</button></div>
+        <div id="6" class="grid-item"><button onclick="ourFunction6()">6</button></div>  
+        <div style="background-color: yellow;" id="7" class="grid-item"><button onclick="ourFunction7()">7</button></div>
+        <div id="8" class="grid-item"><button onclick="ourFunction8()">8</button></div>
+        <div id="9" class="grid-item" onclick="ourFunction9(this)">9</div>  
+      </div>
+      <div id="info">0</div>
+      <button onclick="tell1(this)">1</button>
+</body>
+
+</html>

@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Live Share</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="">
+</head>
+
+<body>
+
+    <style>
+        .grid-container {
+        display: grid;
+        grid-template-columns: auto auto auto;
+        background-color: #2196F3;
+        padding: 10px;
+        }
+
+        .grid-item {
+        background-color: rgba(255, 255, 255, 0.8);
+        border: 1px solid rgba(0, 0, 0, 0.8);
+        padding: 20px;
+        font-size: 30px;
+        text-align: center;
+        }
+        
+        div {
+            display: grid;
+            grid-template-areas: 'en' 'to' 'tre'
+                        'fire' 'fem' 'seks'
+                        'syv' 'åtte' 'ni';
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-rows: ;1fr 1fr 1fr;
+        }
+        
+        #en {
+            grid-area: en;
+        }
+        #to {
+            grid-area: to;
+        }
+        #tre {
+            grid-area: tre;
+        }
+        #fire {
+            grid-area: fire;
+        }
+        #fem {
+            grid-area: fem;
+        }
+        #seks {
+            grid-area: seks;
+        }
+        #syv {
+            grid-area: syv;
+        }
+        #åtte {
+            grid-area: åtte;
+        }
+        #ni {
+            grid-area: ni;
+        }
+        * {
+            font-size: 100px;
+            font-family: ;
+        }
+    </style>
+    <table>
+        <div>
+            <tr id="en">1 </tr>
+            <tr id="to">2 </tr>
+            <tr id="tre">3 </tr>
+            <tr id="fire">4 </tr>
+            <tr id="fem">5 </tr>
+            <tr id="seks">6 </tr>
+            <tr id="syv">7 </tr>
+            <tr id="åtte">8 </tr>
+            <tr id="ni">9 </tr>
+        </div>
+
+    </table>
+
+    <script src="" async defer></script>
+
+    <div class="grid-container">
+        <div class="grid-item">1</div>
+        <div class="grid-item">2</div>
+        <div class="grid-item">3</div>  
+        <div class="grid-item">4</div>
+        <div class="grid-item">5</div>
+        <div class="grid-item">6</div>  
+        <div class="grid-item">7</div>
+        <div class="grid-item">8</div>
+        <div class="grid-item">9</div>  
+      </div>
+      
+</body>
+
+</html>

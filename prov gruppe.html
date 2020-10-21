@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="">
+    </head>
+    <body>
+        <style>
+            .grid-container {
+                display: grid;
+                grid-template-columns: 300px 300px 300px;
+                grid-template-rows: 300px 300px 300px;
+                width: 900px;
+            }
+            .grid-item {
+                text-align: center;
+                padding-top: 60px;
+            }
+            button {
+                font-size: 100px;
+                width: 100px;
+                
+            }
+            #info {
+                font-size: 50px;
+            }
+        </style>
+        <div class="grid-container">
+            <div id="background">
+                <div id="1" class="grid-item"><button onclick="ourFunction1()">1</button></div>
+            </div>
+            <div id="2" class="grid-item"><button onclick="ourFunction2()">2</button></div>
+            <div id="3" class="grid-item"><button onclick="ourFunction3()">3</button></div>  
+            <div id="4" class="grid-item"><button onclick="ourFunction4()">4</button></div>
+            <div id="5" class="grid-item"><button onclick="ourFunction5()">5</button></div>
+            <div id="6" class="grid-item"><button onclick="ourFunction6()">6</button></div>  
+            <div id="7" class="grid-item"><button onclick="ourFunction7()">7</button></div>
+            <div id="8" class="grid-item"><button onclick="ourFunction8()">8</button></div>
+            <div id="9" class="grid-item"><button onclick="ourFunction9()">9</button></div>
+          </div>
+        <div onclick="goA()">1</div>
+        <div id="info">123</div>
+        <script>
+            function goA() {
+                document.getElementById('background').style.backgroundColor = 'blue';
+            }
+            function ourFunction1() {
+                document.getElementById('info').innerHTML += '1';
+            }
+            function ourFunction2() {
+                document.getElementById('info').innerHTML += '2';
+            }
+            function ourFunction3() {
+                document.getElementById('info').innerHTML += '3';
+            }
+            function ourFunction4() {
+                document.getElementById('info').innerHTML += '4';
+            }
+            function ourFunction5() {
+                document.getElementById('info').innerHTML += '5';
+            }
+            function ourFunction6() {
+                document.getElementById('info').innerHTML += '6';
+            }
+            function ourFunction7() {
+                document.getElementById('info').innerHTML += '7';
+            }
+            function ourFunction8() {
+                document.getElementById('info').innerHTML += '8';
+            }
+            function ourFunction9() {
+                document.getElementById('info').innerHTML += '9';
+            }
+        </script>
+    </body>
+</html>

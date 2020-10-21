@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+</head>
+
+<body>
+    <p>Ferdighet 3 - spesialtilfelle, this og gjøre noe med det elementet man trykker på (eller som utløser eventet)</p>
+    Samenlign dette eksempelet med "Ferdighet 2 - Onclick - kjøre funksjon som endrer innerHTML ut fra Id"!
+    <h2 id="z" onclick="select(this)">z</h2>
+    <h2 id="y" onclick="select(this)">y</h2>
+    <div id="info"></div>
+
+
+    <script>
+        var selectedDiv = '';
+
+
+        function select(clickDiv) {
+            selectedDiv = clickDiv;
+            if (selectedDiv.id == 'z') {
+                document.getElementById('info').innerHTML += '1';
+                console.log(1)
+            } else if (selectedDiv.id == 'y') {
+                document.getElementById('info').innerHTML += '2';
+                console.log(2)
+            }
+        };
+
+
+    </script>
+</body>
+
+</html>
