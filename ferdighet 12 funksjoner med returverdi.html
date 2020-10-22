@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 
 <html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+
 <head>
     <meta charset="utf-8" />
     <title></title>
@@ -8,12 +9,16 @@
         div {
             position: absolute;
         }
+
+        * {
+            color: black;
+        }
     </style>
 </head>
+
 <body>
     <p>Ferdighet 12 - Funksjoner med returverdi</p>
     <script>
-        var ord = tilfeldigTallOrd();
         tilfeldigFirkant();
 
         function tilfeldigFirkant() {
@@ -25,17 +30,19 @@
             var bredde = endX - startX;
             var høyde = endY - startY;
             var farge = tilfeldigFarge();
-            
+
             var divHtml = '<div style="' +
                 delAvStylePx('left', startX) +
                 delAvStylePx('top', startY) +
                 delAvStylePx('width', bredde) +
                 delAvStylePx('height', høyde) +
-                delAvStyle('background-color', farge) + 
-                '"></div>';
-                
+                delAvStyle('background-color', farge) +
+                '">' + tilfeldigOrd() + '</div>';
+ 
+
+
             document.write(divHtml);
-            divHtml.innerHTML += ord;
+
             if (Math.random() < 0.9) tilfeldigFirkant();
         }
 
@@ -56,6 +63,7 @@
                 tilfeldigTallEllerBokstavABCDEF() +
                 tilfeldigTallEllerBokstavABCDEF();
         }
+        console.log(tall);
 
         function tilfeldigTallEllerBokstavABCDEF() {
             var tall = tilfeldigTall(0, 15);
@@ -63,17 +71,52 @@
             const charCodeA = 'a'.charCodeAt(0);
             return String.fromCharCode(tall - 10 + charCodeA);
         }
-        function tilfeldigTallOrd() {
-            var tall = tilfeldigTall(0, 28);
-            if      (tall == 28) return 'å';
-            else if (tall == 27) return 'ø';
-            else if (tall == 26) return 'æ';
-            const charCodeA = 'a'.charCodeAt(0)
-            return String.fromCharCode(tall - 10 + charCodeA);
+        function tilfeldigTallOrdVokal() {
+            var tall = tilfeldigTall(0, 8);
+            if (tall == 0) return 'a';
+            else if (tall == 1) return 'e';
+            else if (tall == 2) return 'i';
+            else if (tall == 3) return 'o';
+            else if (tall == 4) return 'u';
+            else if (tall == 5) return 'y';
+            else if (tall == 6) return 'æ';
+            else if (tall == 7) return 'ø';
+            else if (tall == 8) return 'å'; 
+        }
+        function tilfeldigTallOrdKonsenant() {
+            var tall = tilfeldigTall(0, 8);
+            if (tall == 0) return 'b';
+            else if (tall == 1) return 'c';
+            else if (tall == 2) return 'd';
+            else if (tall == 3) return 'f';
+            else if (tall == 4) return 'h';
+            else if (tall == 5) return 'j';
+            else if (tall == 6) return 'k';
+            else if (tall == 7) return 'l';
+            else if (tall == 8) return 'm'; 
+            else if (tall == 9) return 'n'; 
+            else if (tall == 10) return 'p'; 
+            else if (tall == 11) return 'q'; 
+            else if (tall == 12) return 'r'; 
+            else if (tall == 13) return 's'; 
+            else if (tall == 14) return 't';
+            else if (tall == 15) return 'v';
+            else if (tall == 16) return 'w';
+            else if (tall == 17) return 'x';
+            else if (tall == 18) return 'z';
             
-        };
-        
-        
+        }
+        function tilfeldigOrd() {
+            return tilfeldigTallOrdKonsenant() +
+            tilfeldigTallOrdVokal() +
+            tilfeldigTallOrdKonsenant() +
+            tilfeldigTallOrdVokal() +
+            tilfeldigTallOrdKonsenant();
+            
+        }
+
+
+
 
 
         function tilfeldigTall(minimum, maksimum) {
@@ -81,4 +124,5 @@
         };
     </script>
 </body>
+
 </html>

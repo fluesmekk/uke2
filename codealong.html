@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Codealong #1 Random Image Generator</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="">
+        <style>
+            .content {
+                background-color: blue;
+                width: 100px;
+                height: 100px;
+            }
+            .contentButton {
+                background-color: red;
+            }
+        </style>
+    </head>
+    <body>
+        <!--https://picsum.photos/id/237/200/300-->
+        <div class="content" id="contentDiv"></div>
+        <button id="" class="contentButton" onclick="getImage()">Klikk her for bilde🎲</button>
+        
+        <script>
+            function getImage() {
+                var randomNr = Math.floor(Math.random() * 1001)
+                document.getElementById('contentDiv').innerHTML = `<img style='heigth: auto; width: 10%; src="https://picsum.photos/id/237/200/300${randomNr}">`;
+
+            }
+
+        </script>
+    </body>
+</html>
