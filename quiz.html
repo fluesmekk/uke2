@@ -31,7 +31,8 @@
                     <h1 onclick="feil()">Nils Pettersen</h1>
                     <h1 onclick="riktig()">Kong Harald</h1>
                     <h1 onclick="feil()">Prinsen av Danmark</h1>
-                    ${wrongAnswerTxt || correctAnswerTxt}
+                    ${wrongAnswerTxt || correctAnswerTxt || ''}
+                    <h1 onclick="reset()">RESET</h1>
                     `          
             }
             //controller
@@ -45,6 +46,12 @@
             wrongAnswer = 0;
             correctAnswer = 1;
             updateView();
+        }
+        function reset() {
+            wrongAnswer = 0;
+            correctAnswer = 0;
+            updateView();
+            
         }
 
 
