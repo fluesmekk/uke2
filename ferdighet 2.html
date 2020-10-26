@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+</head>
+<body>
+    <div id="app"></div>
+    <script>
+        //model
+        
+        //view
+        updateView ();
+    function updateView () {
+        document.getElementById('app').innerHTML = `
+    
+
+            <p>Ferdighet 2 - Onclick => Kjøre funksjon som endrer innerHTML til element ut fra Id</p>
+            <h2 id="aaa">AAAAAAAAAAAAAAAA</h2>
+            <h2 onclick="doSomething()">BBBBBBBBBBBBBBBB</h2>
+            `;
+    }
+
+
+        function doSomething() {
+            document.getElementById('aaa').innerHTML = 'CCCCCCCCCCCCCCCC';
+        }
+    </script>
+</body>
+</html>
